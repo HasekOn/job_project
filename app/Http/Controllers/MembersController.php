@@ -66,7 +66,7 @@ class MembersController extends Controller {
         return redirect('/');
     }
 
-    public function notDeleteMember(Member $member, Request $request){
+    public function notDeleteMember(Member $member){
         return redirect('/');
     }
 }
