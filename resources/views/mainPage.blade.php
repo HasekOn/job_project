@@ -33,6 +33,17 @@
             Players birthdate: {{$member['birthDate']}}
             <br>
             Players number: {{$member['playerNumber']}}
+            <form action="/edit-member/{{$member->id}}" method="POST">
+                @csrf
+                @method('GET')
+                <button>EDIT</button>
+            </form>
+            <br>
+            <form action="/delete-member/{{$member->id}}" method="POST">
+                @csrf
+                @method('GET')
+                <button>DELETE</button>
+            </form>
         </div>
     @endforeach
 </div>
