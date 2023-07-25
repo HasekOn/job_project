@@ -9,15 +9,20 @@
 </head>
 <body>
 <h1>Members database</h1>
-
 <div style="border: 3px solid black;">
-    <h2>Create a New Post</h2>
-    <form action="/create-post" method="POST">
+    <h2>Create a New Member</h2>
+    <form action="/create-member" method="POST">
         @csrf
-        <input type="text" name="title" placeholder="post title">
-        <textarea name="body" placeholder="body content..."></textarea>
+        <input type="text" name="name" placeholder="players name">
+        <input type="text" name="surname" placeholder="players surname">
+        <input type="text" name="email" placeholder="players email">
+        <input type="date" name="birthDate" placeholder="players birthdate">
+        <input type="number" name="playerNumber" placeholder="players Number">
         <button>Save Post</button>
     </form>
 </div>
+
+
+
 </body>
 </html>
