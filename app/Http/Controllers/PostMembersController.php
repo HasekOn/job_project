@@ -8,7 +8,7 @@ namespace App\Http\Controllers;
 use App\Models\Member;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class PostMembersController extends Controller
 {
         public function createMember(Request $request){
             $inputFields = $request->validate([

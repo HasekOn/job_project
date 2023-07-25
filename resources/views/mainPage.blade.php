@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+
 <h1>Members database</h1>
 <div style="border: 3px solid black;">
     <h2>Create a New Member</h2>
@@ -22,6 +23,19 @@
     </form>
 </div>
 
+<div style="border: 3px solid black;">
+    <h2>All members list</h2>
+    @foreach($members as $member)
+        <div style="background-color: #c9c5c5; padding: 10px; margin: 10px;">
+            <h3>{{$member['name']}} {{$member['surname']}}</h3>
+            Players email: {{$member['email']}}
+            <br>
+            Players birthdate: {{$member['birthDate']}}
+            <br>
+            Players number: {{$member['playerNumber']}}
+        </div>
+    @endforeach
+</div>
 
 
 </body>
